@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 需要安装jwt与requests
 # pip install PyJWT
 # pip install requests

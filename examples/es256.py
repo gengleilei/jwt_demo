@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 使用curl测试命名示例如下：
 # curl -v http://xxxxx/headers -H "Authorization:Bearer 生成的Token"
 
