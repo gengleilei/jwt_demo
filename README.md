@@ -29,3 +29,4 @@ python examples/okp.py
 | `examples/rs256.py` | Creates and prints out a JWT using the **RS256** algorithm |
 | `examples/es256.py` | Creates and prints out a JWT using the **ES256** algorithm |
 | `examples/okp.py` | Creates and prints out a JWT using the **Ed25519** algorithm |
+| `examples/ps256.py` | Creates and prints out a JWT using the **PS256** algorithm |
