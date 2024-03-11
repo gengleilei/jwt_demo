@@ -94,7 +94,7 @@ def test(jwt_token):
     }
 
     # 发送GET测试请求，URL请根据测试情况调整
-    response = requests.get("http://47.97.61.65/headers", headers=headers)
+    response = requests.get("http://xx.xx.xx.xx/headers", headers=headers)
 
     if response.status_code == 200:
         print("success")
