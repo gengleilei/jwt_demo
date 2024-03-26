@@ -47,7 +47,7 @@ def generate_rsa_key():
 
     return private_key, private_key_pem.decode('utf-8'), public_key, public_key_pem.decode('utf-8')
 
-def generate_ps256_jwks(public_key, kid, use, algorithm):
+def generate_ps384_jwks(public_key, kid, use, algorithm):
     if use != "enc" and use != "sig":
         raise ValueError("Invalid use value")
 
@@ -118,7 +118,7 @@ def main():
     # 构建JWKS配置
     timestamp = time.time()
     kid = str(timestamp)
-    jwk = generate_ps256_jwks(public_key, kid, "sig", algorithm)
+    jwk = generate_ps384_jwks(public_key, kid, "sig", algorithm)
     jwks = {
         "keys": [jwk]
     }
@@ -135,7 +135,6 @@ def main():
 
     # 打印响应内容
     # print(test(token))
-
 
 if __name__ == '__main__':
     main()
